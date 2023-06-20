@@ -1,7 +1,7 @@
 <?php
 function get_endereco($cep){
 
-  // formatar o cep removendo caracteres nao numericos
+  // formatar o cep removendo caracteres nao numericos.
   $cep = preg_replace("/[^0-9]/", "", $cep);
   $url = "http://viacep.com.br/ws/$cep/xml/";
 
